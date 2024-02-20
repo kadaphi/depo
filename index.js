@@ -7,10 +7,10 @@ let admin;//6354552851
 admin = "@forexfactorypayout";
 const url = "http://62.72.24.208:300";
 const btc_time = 2000000 //1000 = 1 secs
-const trx_time = 10000 //1000 = 1 secs
-const usdt_time= 300000 //1000 = 1 secs
-const eth_time = 25000 //1000 = 1 secs
-const bnb_time = 17000 //1000 = 1 secs
+const trx_time = 1020000 //1000 = 1 secs
+const usdt_time= 900000 //1000 = 1 secs
+const eth_time = 1200000 //1000 = 1 secs
+const bnb_time = 600000 //1000 = 1 secs
 
 
 
@@ -105,12 +105,12 @@ bot.hears("TRX",async ctx => {
         }
         try {
            await ctx.telegram.sendMessage(admin,`
-    ✅ NEW DEPOSIT RECEIVED 
+    🏦 NEW DEPOSIT RECEIVED 🏦 
 
-    🗣 User: ${name}
-    🆔 User_Id: ${user_id}
-    💵 Amount: ${amount} ${currency}
-    🔗 TXID: <a href="https://tronscan.org/#/transaction/${txid}">${txid}</a>
+🗣 User: ${name}
+🆔 User_Id: ${user_id}
+💵 Amount: ${amount} ${currency}
+🔗 TXID: <a href="https://tronscan.org/#/transaction/${txid}">${txid}</a>
            `,{
                  parse_mode: "HTML",
                  disable_web_page_preview: true
@@ -153,7 +153,7 @@ bot.hears("USDT",async ctx => {
     }
     try {
        await ctx.telegram.sendMessage(admin,`
-✅ NEW DEPOSIT RECEIVED 
+🏦 NEW DEPOSIT RECEIVED 🏦 
 
 🗣 User: ${name}
 🆔 User_Id: ${user_id}
@@ -196,7 +196,7 @@ bot.hears("BTC",async ctx => {
     }
     try {
       await ctx.telegram.sendMessage(admin,`
-✅ NEW DEPOSIT RECEIVED 
+🏦 NEW DEPOSIT RECEIVED 🏦 
 
 🗣 User: ${name}
 🆔 User_Id: ${user_id}
@@ -239,7 +239,7 @@ bot.hears("BNB",async ctx => {
     }
     try {
       await ctx.telegram.sendMessage(admin,`
-✅ NEW DEPOSIT RECEIVED 
+🏦 NEW DEPOSIT RECEIVED 🏦 
 
 🗣 User: ${name}
 🆔 User_Id: ${user_id}
@@ -282,7 +282,7 @@ bot.hears("ETH",async ctx => {
     }
     try {
       await ctx.telegram.sendMessage(admin,`
-✅ NEW DEPOSIT RECEIVED 
+🏦 NEW DEPOSIT RECEIVED 🏦 
 
 🗣 User: ${name}
 🆔 User_Id: ${user_id}
