@@ -99,7 +99,7 @@ bot.hears("TRX",async ctx => {
           ctx.reply("Wrong Coin Generated, Please Try Again")
           return;
         }
-        if (amount < 1 || amount > 10000){
+        if (amount < 728 || amount > 100000){
           ctx.reply("Amount is Either less or High than required "+amount+" TRX");
           return;
         }
@@ -147,7 +147,7 @@ bot.hears("USDT",async ctx => {
       ctx.reply("Wrong Coin Generated, Please Try Again");
       return;
     }
-    if (amount < 60 || amount > 2000){
+    if (amount < 100 || amount > 20000){
       ctx.reply("Amount is Either less or High than required "+amount+" USDT");
       return;
     }
@@ -190,7 +190,7 @@ bot.hears("BTC",async ctx => {
     const data = result.data.data[0];
     const txid = data.hash;
     const amount = data.output_total/100000000;
-    if (amount < 0.00000001 || amount > 1){
+    if (amount < 0.0019 || amount > 1){
       ctx.reply("Amount is Either less or High than required "+amount+" BTC");
       return;
     }
@@ -233,7 +233,7 @@ bot.hears("BNB",async ctx => {
     const data = result.data
     const txid = data.hash;
     const amount = data.value;
-    if (amount < 0.00000001 || amount > 10){
+    if (amount < 0.28 || amount > 10){
       ctx.reply("Amount is Either less or High than required "+amount+" BNB");
       return;
     }
@@ -276,7 +276,7 @@ bot.hears("ETH",async ctx => {
     const data = result.data
     const txid = data.hash;
     const amount = data.value;
-    if (amount < 0.00000001 || amount > 10){
+    if (amount < 0.034 || amount > 10){
       ctx.reply("Amount is Either less or High than required "+amount+" eth");
       return;
     }
