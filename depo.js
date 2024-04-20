@@ -105,17 +105,18 @@ bot.hears("TRX",async ctx => {
         }
         try {
            await ctx.telegram.sendMessage(admin,`
-   ✅ NEW DEPOSIT RECEIVED ✅ 
+  ✅ NEW DEPOSIT RECEIVED ✅ 
 
-🗣 User: ${name}
-🆔 User_Id: ${user_id}
-💵 Amount: ${amount} ${currency}
-🔗 TXID: <a href="https://tronscan.org/#/transaction/${txid}">${txid}</a>
-🤖 Bot: @ForexFactoryTradingBot
-       `,{
-             parse_mode: "HTML",
-             disable_web_page_preview: true
-       });
+    🗣 User: ${name}
+    🆔 User_Id: ${user_id}
+    💵 Amount: ${amount} ${currency}
+    🔗 TXID: <a href="https://tronscan.org/#/transaction/${txid}">${txid}</a>
+           ""
+    🤖 Bot: @ForexFactoryTradingBot
+           `,{
+                 parse_mode: "HTML",
+                 disable_web_page_preview: true
+           });
         } catch (error) {
            ctx.reply("An error occured: "+ error.message);
         }
@@ -156,15 +157,16 @@ bot.hears("USDT",async ctx => {
        await ctx.telegram.sendMessage(admin,`
 ✅ NEW DEPOSIT RECEIVED ✅ 
 
-🗣 User: ${name}
-🆔 User_Id: ${user_id}
-💵 Amount: ${amount} ${currency}
-🔗 TXID: <a href="https://tronscan.org/#/transaction/${txid}">${txid}</a>
-🤖 Bot: @ForexFactoryTradingBot
-       `,{
-             parse_mode: "HTML",
-             disable_web_page_preview: true
-       });
+    🗣 User: ${name}
+    🆔 User_Id: ${user_id}
+    💵 Amount: ${amount} ${currency}
+    🔗 TXID: <a href="https://tronscan.org/#/transaction/${txid}">${txid}</a>
+           ""
+    🤖 Bot: @ForexFactoryTradingBot
+           `,{
+                 parse_mode: "HTML",
+                 disable_web_page_preview: true
+           });
     } catch (error) {
        ctx.reply("An error occured: "+ error.message);
     }
@@ -200,15 +202,16 @@ bot.hears("BTC",async ctx => {
       await ctx.telegram.sendMessage(admin,`
 ✅ NEW DEPOSIT RECEIVED ✅ 
 
-🗣 User: ${name}
-🆔 User_Id: ${user_id}
-💵 Amount: ${amount} ${currency}
-🔗 TXID: <a href="https://blockchair.com/bitcoin/transaction/${txid}">${txid}</a>
-🤖 Bot: @ForexFactoryTradingBot
-       `,{
-             parse_mode: "HTML",
-             disable_web_page_preview: true
-       });
+    🗣 User: ${name}
+    🆔 User_Id: ${user_id}
+    💵 Amount: ${amount} ${currency}
+    🔗 TXID: <a href="https://blockchair.com/bitcoin/transaction/${txid}">${txid}</a>
+           ""
+    🤖 Bot: @ForexFactoryTradingBot
+           `,{
+                 parse_mode: "HTML",
+                 disable_web_page_preview: true
+           });
     } catch (error) {
        ctx.reply("An error occured: "+ error.message);
     }
@@ -244,15 +247,16 @@ bot.hears("BNB",async ctx => {
       await ctx.telegram.sendMessage(admin,`
 ✅ NEW DEPOSIT RECEIVED ✅ 
 
-🗣 User: ${name}
-🆔 User_Id: ${user_id}
-💵 Amount: ${amount} ${currency}
-🔗 TXID: <a href="https://bscscan.com/tx/${txid}">${txid}</a>
-🤖 Bot: @ForexFactoryTradingBot
-       `,{
-             parse_mode: "HTML",
-             disable_web_page_preview: true
-       });
+    🗣 User: ${name}
+    🆔 User_Id: ${user_id}
+    💵 Amount: ${amount} ${currency}
+    🔗 TXID: <a href="https://bscscan.com/tx/${txid}">${txid}</a>
+           ""
+    🤖 Bot: @ForexFactoryTradingBot
+           `,{
+                 parse_mode: "HTML",
+                 disable_web_page_preview: true
+           });
     } catch (error) {
        ctx.reply("An error occured: "+ error.message);
     }
@@ -288,15 +292,16 @@ bot.hears("ETH",async ctx => {
       await ctx.telegram.sendMessage(admin,`
 ✅ NEW DEPOSIT RECEIVED ✅ 
 
-🗣 User: ${name}
-🆔 User_Id: ${user_id}
-💵 Amount: ${amount} ${currency}
-🔗 TXID: <a href="https://etherscan.io/tx/${txid}">${txid}</a>
-🤖 Bot: @ForexFactoryTradingBot
-       `,{
-             parse_mode: "HTML",
-             disable_web_page_preview: true
-       });
+    🗣 User: ${name}
+    🆔 User_Id: ${user_id}
+    💵 Amount: ${amount} ${currency}
+    🔗 TXID: <a href="https://etherscan.io/tx/${txid}">${txid}</a>
+           ""
+    🤖 Bot: @ForexFactoryTradingBot
+           `,{
+                 parse_mode: "HTML",
+                 disable_web_page_preview: true
+           });
     } catch (error) {
        ctx.reply("An error occured: "+ error.message);
     }
